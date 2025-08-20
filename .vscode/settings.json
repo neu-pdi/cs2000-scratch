@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        ".devcontainer": true,
+        ".vscode": true,
+        ".github": true,
+    },
+    "workbench.editorAssociations": {
+        "{git}:/**/*.{arr}": "default"
+    },
+    "pyret-parley.defaultContext": "dcic2024"
+}
+
