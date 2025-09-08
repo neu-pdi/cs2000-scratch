@@ -5,7 +5,7 @@
         ".github": true,
     },
     "workbench.editorAssociations": {
-        "{git}:/**/*.{arr}": "default"
+        "{git,gitlens,github}:/**/*.{arr}": "default"
     },
     "pyret-parley.defaultContext": "dcic2024"
 }
