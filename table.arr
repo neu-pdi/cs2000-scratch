@@ -31,11 +31,30 @@ end
 
 
 
-
-
-
-
-
-
 recipes.row-n(2)["prep-time"]
 recipes.row-n(3)
+
+
+
+
+
+
+#DAY 2 of tables
+
+orders = table: time, amount
+  row: "08:00", 10.50
+  row: "09:30", 5.75
+  row: "10:15", 8.00
+  row: "11:00", 3.95
+  row: "14:00", 4.95
+  row: "16:45", 7.95
+end
+
+
+fun high-val(o :: Row):
+  doc: "determines if row has an amount of >= 8 dollars"
+  o["amount"] >= 5.0
+where:
+  high-val(orders.row-n(2)) is true
+  high-val(orders.row-n(3)) is false
+end
