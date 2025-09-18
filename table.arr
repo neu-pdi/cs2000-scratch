@@ -58,3 +58,43 @@ where:
   high-val(orders.row-n(2)) is true
   high-val(orders.row-n(3)) is false
 end
+
+new-high-orders = filter-with(orders, high-val)
+
+
+fun is-morn(rise :: Row):
+  rise["time"] <= "12"
+  
+where:
+  
+  is-morn(orders.row-n(2)) is true 
+  is-morn(orders.row-n(5)) is false
+  
+end
+  
+  
+  
+  
+swap_order = order-by(orders, "time", false)
+
+latestmorn = swap_order.row-n(2)["amount"]
+
+
+
+photos = load-table: Location :: String, Subject :: String, Date :: String
+  source: csv-table-url("https://pdi.run/f25-2000-photos.csv", default-options)
+end
+
+
+fun forest(tree :: Row):
+  doc: "identifies the subject forest in the table"
+  tree["Subject"] == "Forest"
+  
+end
+
+
+forest-finder = filter-with(photos, forest)
+
+date-order = order-by(photos, "Date", false)
+
+latestlocation = date-order.row-n(0)["Location"]
