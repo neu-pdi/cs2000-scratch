@@ -98,3 +98,8 @@ forest-finder = filter-with(photos, forest)
 date-order = order-by(photos, "Date", false)
 
 latestlocation = date-order.row-n(0)["Location"]
+
+
+
+
+
