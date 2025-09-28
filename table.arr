@@ -18,7 +18,7 @@ recipes = load-table: title :: String, servings :: Number, prep-time :: Number
   source: csv-table-url("https://pdi.run/f25-2000-recipes.csv", default-options)
     
   sanitize servings using num-sanitizer
-  sanitize prep-time using num-sanitizer
+  sanitize prep-time using num-sanitizenr
 end
   
 

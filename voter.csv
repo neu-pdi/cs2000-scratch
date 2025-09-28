@@ -1,0 +1,13 @@
+VoterID,FirstName,LastName,DOB,Party,Address,City,State,Zip,Phone,Email,LastVoted
+1,Ariz, Nawaz,1920-06-07,Green Party, 22 Fort Hill, Boston , MA,10001,(555) 123-4567,sillyguy@example.com,01/01/2025
+2,Jane,Smith,05/12/1975,Republican,456 Elm Street,Los Angeles,,90001,555.987.6543,jane_smith at email.com,2023-11-08
+3,Bob,Johnson,1978/07/08,Independent,789 Oak St ,Chicago,IL,60614,555-000-111,bob.johnson@example, 2022-10-10
+4,Alice,O'Connor,1992-04-31,Democrat,135 Pine St,San Francisco,CA,94107,5551234567,alice.o'connor@example.com,2024-02-29
+5,Carlos,Méndez,1985-09-23,Independent,246 Maple Ave,Dallas,TX,75201, (555) 333-2222,carlos.mendez@example.com,2024/05/15
+6,Emily,Nguyen,1990-13-01,Democrat,357 Birch Rd.,Houston,TX,77002,555-444-3333,emily.nguyen@example.com,05-20-2024
+7,Michael,Brown,1970-11-11,Republican,468 Cedar Ln,Seattle,WA,98101,555-6666-777,michael.brown@example.com,2024-03-14
+8,Sarah,Lee,1988-02-29,Democrat,579 Walnut St.,Boston,MA,0213,555-777-8888,sarah.lee@example.com,2023-09-30
+9,John, Doe,1980-05-12,Democrat,123 Main St,New York,NY,10001,(555) 123-4567,john.doe@example.com,11/04/2024
+10,Linda,King,1975-07-15,Republican,680 Spruce Blvd,Miami,FL,33101,555-999-0000,linda.king@example.com,2024-06-01
+11,Kevin,O’Brien,1982-03-05,Democrat,791 Chestnut Street,Atlanta,GA,30303,555-111-2222,kevin.obrien@example.com,2024-04-31
+12,Maria,Gonzalez,1979-08-20,Green Party,852 Poplar Ave,Phoenix,AZ,85001,555.222.3333,maria.gonzalez@example.com,2023-13-01

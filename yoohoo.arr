@@ -4,7 +4,7 @@ include csv
   
 voter-data = 
   load-table: VoterID,FirstName,LastName,DOB,Party,Address,City,State,Zip,Phone,Email,LastVoted 
-    source: csv-table-url("https://raw.githubusercontent.com/neu-pdi/cs2000-public-resources/refs/heads/main/static/support/10-voters.csv", default-options)
+    source: csv-table-file("voter.csv", default-options)
 end
 
 
@@ -24,3 +24,7 @@ lam(p :: String):
 end
   )
 
+
+
+
+##5) I would use string-substring to extract and separate the data into pieces and then reorganise to fit the format so it can all be changed with one set of code. 
