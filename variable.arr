@@ -5,21 +5,19 @@ var my-var = 3
 my-var := 30000000000000
 
 
-fun 
-  
-  if: 
-   
-  else if n:
-    
-  else:
-end
-end
-
-lam(r:: Number) r end
  
-
+#listy = {1 , 2, "machine", "bogey", 5}
 
   #. Block (new keyword)
 
 
-#for each( from list):
+#for each( from listy):
+
+
+
+
+
+
+#end
+
+
