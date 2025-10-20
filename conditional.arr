@@ -97,4 +97,28 @@ end
 
 
 
- 
+data Beverage:
+  | coffee(num-shots :: Number)
+  | tea(name :: String, brew-time :: Number)
+end
+
+
+b1 = coffee(3)
+b2 = tea("green tea", 10)
+b3 = coffee(1)
+
+
+fun is-strong(b :: Beverage):
+  cases (Beverage) b:
+    | coffee(sh) => if (sh > 2): true
+      else: false
+      end
+    | tea(gren, tm) => if (tm > 5): true
+      else: false
+      end
+  end
+where: 
+  is-strong(b1) is true
+  is-strong(b2) is true
+  is-strong(b3) is false
+end
