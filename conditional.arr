@@ -25,3 +25,76 @@ where:
   display-payment(payment-2_5) is "Paid by debit expiring on 09/26"
 end
 
+
+#Define a Vehicle data type with three variants: bike (no fields), car (with make and year fields), and truck (with make, year, and capacity fields). Create one example of each variant.
+
+data Vehicle:
+  | bike
+  | car(make :: String, year :: Number)
+  | truck(make :: String, year :: Number, capacity-fields :: String)
+end
+
+
+ve1 = bike
+ve2 = car("SRT Hellcat", 2007)
+ve3 = truck("F-Series", 2018, "100KG")
+
+#Write a function vehicle-age that takes a Vehicle and the current year, and returns the age in years. For bikes, return 0.
+
+fun vehicle-age(current-year :: Number, v :: Vehicle): 
+  cases (Vehicle) v:
+    | bike => 0
+    | car(make, year) => (current-year - ve2.year)
+    | truck(mak, yr, cap) => (current-year - ve3.year)
+  end
+where:
+  vehicle-age(2025, ve1) is 0
+  vehicle-age(2025, ve2) is 18
+  vehicle-age(2025, ve3) is 7
+end
+
+#Define a WeatherReport with variants: sunny (temperature only), rainy (temperature and precipitation amount), and snowy (temperature, precipitation, and wind speed). Write a function is-severe that returns true if: rainy with >2 inches, snowy with >30 mph wind, or sunny above 95°F.
+
+data WeatherReport:
+  | sunny(temp :: Number)
+  | rainy(temp :: Number, precip-amount :: Number)
+  | snowy(temp :: Number, precip-amount :: Number, winds :: Number)
+end
+
+
+w1 = sunny(96)
+w2 = rainy(200, 3)
+w3 = snowy(30000000, 1, 31)
+
+
+
+fun is-severe(w :: WeatherReport):
+  cases (WeatherReport) w:
+    | sunny(temp) =>  if (temp > 95): true
+      else: false
+      end
+    |rainy(temp, precip-amount) => if (precip-amount > 2): true else: false
+      end
+    |snowy(temp, precip, winds) => if (winds > 30): true
+      else: false
+      end
+  end
+where: 
+  is-severe(w1) is true
+  is-severe(w2) is true
+  is-severe(w3) is true
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
